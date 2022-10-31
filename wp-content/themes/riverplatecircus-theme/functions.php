@@ -144,7 +144,7 @@ function riverplatecircus_theme_scripts() {
 	wp_style_add_data( 'riverplatecircus-theme-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'fontawesome-icons', 'https://kit.fontawesome.com/c3521f5bf2.js' );
-	wp_enqueue_script( 'riverplatecircus-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'riverplatecircus-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), false, false);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -190,3 +190,19 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Show cart contents / total Ajax
+ */
+add_filter( 'woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment' );
+
+function woocommerce_header_add_to_cart_fragment( $fragments ) {
+	global $woocommerce;
+
+	ob_start();
+
+	?>
+	<a class="cart-customlocation" href="<?php echo esc_url(wc_get_cart_url()); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>"><i class="fa-solid fa-cart-shopping"></i><?php echo sprintf(_n('%d ticket', '%d tickets', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?> - <?php echo $woocommerce->cart->get_cart_total(); ?></a>
+	<?php
+	$fragments['a.cart-customlocation'] = ob_get_clean();
+	return $fragments;
+}

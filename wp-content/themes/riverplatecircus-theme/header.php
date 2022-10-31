@@ -9,6 +9,10 @@
  * @package riverplatecircus-theme
  */
 
+	$urlHome = get_home_url();
+	$urlEvents = $urlHome . "/eventos";
+	$urlNosotros = $urlHome . "/#Nosotros";
+	$urlCart =  $urlHome . "/carrito";
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -31,16 +35,34 @@
 			<div class="header__logo"> 
 				<?php the_custom_logo(); ?>
 			</div>
+
+			<i id="hamburger-menu" class="fa-solid fa-bars"></i>
 			
-			<nav id="site-navigation" class="header__nav">
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
-					)
-				);
-				?>
+			<nav class="header__desktop-nav">
+				<a class="nav__item" href="<?php echo $urlHome ?>">Inicio</a>
+				<a class="nav__item" href="<?php echo $urlEvents ?>">Eventos</a>
+				<a class="nav__item" href="<?php echo $urlNosotros ?>">Nosotros</a>
+				<a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" 
+				title="<?php _e( 'View your shopping cart' ); ?>">
+				<i class="fa-solid fa-cart-shopping"></i>
+				<?php echo sprintf ( _n( '%d ticket', '%d tickets', WC()->cart->get_cart_contents_count() ),
+				WC()->cart->get_cart_contents_count() ); ?> - <?php echo WC()->cart->get_cart_total(); ?>
+				</a>
 			</nav>
 		</div>
+		
 	</header>
+	
+	<div class="mobile-nav-wrap">
+		<nav id="mobile-nav" class="mobile-nav">
+			<a class="nav__item" href="<?php echo $urlHome ?>">Inicio</a>
+			<a class="nav__item" href="<?php echo $urlEvents ?>">Eventos</a>
+			<a class="nav__item" href="<?php echo $urlNosotros ?>">Nosotros</a>
+			<a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" 
+			title="<?php _e( 'View your shopping cart' ); ?>">
+			<i class="fa-solid fa-cart-shopping"></i>
+			<?php echo sprintf ( _n( '%d ticket', '%d tickets', WC()->cart->get_cart_contents_count() ),
+			WC()->cart->get_cart_contents_count() ); ?> - <?php echo WC()->cart->get_cart_total(); ?>
+			</a>
+		</nav>
+	</div>

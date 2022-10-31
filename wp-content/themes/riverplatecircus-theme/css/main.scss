@@ -4,22 +4,117 @@
 /********* HEADER *********/
 .site-header{
     width: 100%;
-    height: 80px;
+    height: 60px;
 
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-bottom: 20px;
-    background-color: yellow;
+    background-color: $white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 
     .header-wrap{
-        width: 80%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
 
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         
         .header__logo{
-            width: 200px;
+            width: 125px;
         }
+
+        .fa-bars{
+            font-size: 28px;
+            color: $principal;
+        }
+
+        .header__desktop-nav{
+            display: none;
+        }
+    }
+}
+.mobile-nav-wrap{
+    overflow: hidden;
+    .mobile-nav{
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        margin-top: -100%;
+    
+        background-color: $principal;
+        
+        transition: 1s ease;
+        
+        &.collapse{
+            margin-top: 0;
+        }
+    
+        a{
+            width: 100%;
+            padding: 5px;
+    
+            border-bottom: 2px solid $principal-monochromatic-2;
+            border-top: 2px solid $principal-monochromatic-2;
+    
+            color: $white;
+            font-size: 18px;
+            text-decoration: none;
+            text-align: center;
+    
+            &.nav__item, &.cart-customlocation{
+                font-weight: 700;
+    
+                .fa-cart-shopping{
+                    margin-right: 10px;
+                }
+            }
+        }
+        
+    }
+}
+
+@media screen and (min-width: 1024px)  {
+    .site-header{
+        .header-wrap{
+            .fa-bars{
+             display: none;
+            }
+            .header__desktop-nav{
+                display: block;
+
+                a{
+                    color: $principal;
+                    font-size: 18px;
+                    text-decoration: none;
+                    // transition: .3s ease color;
+    
+                    &:hover{
+                        color: $principal-monochromatic-1;
+                    }
+    
+                    &.nav__item, &.cart-customlocation{
+                        margin-right: 25px;
+                        padding-bottom: 5px;
+                        font-weight: 600;
+                        &:hover{
+                            border-bottom: 2px solid $principal-monochromatic-1;
+                        }
+    
+                        .fa-cart-shopping{
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mobile-nav-wrap{
+        display: none;
     }
 }
