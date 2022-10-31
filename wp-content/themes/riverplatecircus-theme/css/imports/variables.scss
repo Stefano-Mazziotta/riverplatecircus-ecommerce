@@ -1,3 +1,32 @@
 /************* Colors *************/
-$principal: red;
-$secondary: white;
+
+/* 
+*   https://www.colorhexa.com/eb192e 
+*/
+
+$principal: rgb(235, 25, 46);
+$principal-opacity-8: rgba($principal, .8);
+
+$principal-monochromatic-1: rgb(169, 15, 30);
+$principal-monochromatic-2: rgb(192, 17, 34);
+$principal-monochromatic-3: rgb(216, 19, 38);
+
+$principal-monochromatic-5: rgb(237, 48, 67);
+$principal-monochromatic-6: rgb(239, 72, 89);
+$principal-monochromatic-7: rgb(241, 95, 110);
+
+$complementary-1: rgb(25, 235, 214);
+$complementary-2: rgb(25, 151, 235);
+$complementary-3: rgb(25, 235, 109);
+
+$black: rgb(5, 0, 1);
+$white: rgb(255,255,255); 
+
+$light-color-1: rgb(254, 242, 243);
+$light-color-1-opacity-5: rgba(254, 242, 243,.5);
+$light-color-2: rgb(252, 224, 226);
+$light-color-3: rgb(251, 205, 210);
+$light-color-4: rgb(249, 187, 194);
+$light-color-5: rgb(248, 169, 177);
+
+
