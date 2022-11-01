@@ -8,7 +8,7 @@
 
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: $white;
+    background-color: $light-color-1-opacity-5;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 
     .header-wrap{
@@ -92,7 +92,6 @@
                     color: $principal;
                     font-size: 18px;
                     text-decoration: none;
-                    // transition: .3s ease color;
     
                     &:hover{
                         color: $principal-monochromatic-1;

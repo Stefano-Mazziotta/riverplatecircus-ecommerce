@@ -9,29 +9,13 @@
   font-family: "be_vietnam_pro", sans-serif;
 }
 
-@keyframes expandMenu {
-  from {
-    height: 0;
-  }
-  to {
-    height: 100%;
-  }
-}
-@keyframes unexpandMenu {
-  from {
-    height: 100%;
-  }
-  to {
-    height: 0;
-  }
-}
 /********* HEADER *********/
 .site-header {
   width: 100%;
   height: 60px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(254, 242, 243, 0.5);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
 .site-header .header-wrap {
