@@ -157,7 +157,7 @@ add_action( 'wp_enqueue_scripts', 'riverplatecircus_theme_scripts' );
  */
 function enqueue_custom_fonts(){
 	if(!is_admin()){
-		wp_register_style('be_vietnam_pro', 'https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;700&display=swap');
+		wp_register_style('be_vietnam_pro', 'https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;700;800;900&display=swap');
 		wp_enqueue_style('be_vietnam_pro');
 	}
 }
