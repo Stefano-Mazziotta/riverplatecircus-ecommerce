@@ -25,9 +25,9 @@ get_header();
 					<p class="content__subtitle">Donde los sueños se hacen <strong>realidad</strong></p>
 					<a class="content__btn" href="">Compra tus entradas</a>
 					<div class="content__social-wrap">
-						<a class="social-item" href=""><i class="fa-brands fa-whatsapp"></i></a>
-						<a class="social-item" href=""><i class="fa-brands fa-instagram"></i></a>
-						<a class="social-item" href=""><i class="fa-brands fa-facebook-f"></i></a>
+						<a target="_blank" class="social-item" href="https://wa.me/+34662539740"><i class="fa-brands fa-whatsapp"></i></a>
+						<a target="_blank" class="social-item" href="https://www.instagram.com/circotumundodefantasia/"><i class="fa-brands fa-instagram"></i></a>
+						<a target="_blank" class="social-item" href="https://www.facebook.com/Circo-Festini%C3%B1o-107151255431629"><i class="fa-brands fa-facebook-f"></i></a>
 					</div>
 				</div>
 				<div class="decoration">
