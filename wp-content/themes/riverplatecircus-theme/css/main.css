@@ -256,6 +256,7 @@
     transition: ease 0.3s all;
   }
   .hero__wrap .content__social-wrap .social-item:hover {
+    transform: scale(1.05);
     color: rgb(169, 15, 30);
   }
   .hero__wrap .decoration {
