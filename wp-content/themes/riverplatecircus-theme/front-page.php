@@ -24,6 +24,11 @@ get_header();
 					<h1 class="content__title">River Plate Circus</h1>
 					<p class="content__subtitle">Donde los sueños se hacen <strong>realidad</strong></p>
 					<a class="content__btn" href="">Compra tus entradas</a>
+					<div class="content__social-wrap">
+						<a class="social-item" href=""><i class="fa-brands fa-whatsapp"></i></a>
+						<a class="social-item" href=""><i class="fa-brands fa-instagram"></i></a>
+						<a class="social-item" href=""><i class="fa-brands fa-facebook-f"></i></a>
+					</div>
 				</div>
 				<div class="decoration">
 					<img class="blob" src="<?php echo get_template_directory_uri() ?>/img/svg/blobanimation.svg" alt="">
