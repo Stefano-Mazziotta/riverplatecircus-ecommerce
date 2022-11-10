@@ -9,6 +9,10 @@
   font-family: "Be Vietnam Pro", sans-serif;
 }
 
+html {
+  height: 100%;
+}
+
 /********* HEADER *********/
 .site-header {
   width: 100%;
@@ -75,10 +79,10 @@
 /* hero */
 .hero {
   width: 100%;
-  height: 82vh;
+  height: 90vh;
   background-image: url("../img/svg/patternpad.svg");
 }
-.hero__wrap {
+.hero__container {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -87,7 +91,7 @@
   flex-direction: column;
   flex-wrap: wrap;
 }
-.hero__wrap .title {
+.hero__container .title {
   order: 1;
   font-size: 28px;
   font-weight: 900;
@@ -96,15 +100,15 @@
   text-align: center;
   margin-bottom: 5px;
 }
-.hero__wrap .content {
+.hero__container .content {
   order: 3;
   width: 100%;
   text-align: center;
 }
-.hero__wrap .content__title {
+.hero__container .content__title {
   display: none;
 }
-.hero__wrap .content__subtitle {
+.hero__container .content__subtitle {
   width: 60%;
   font-size: 18px;
   font-weight: 400;
@@ -113,7 +117,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-.hero__wrap .content__btn {
+.hero__container .content__btn {
   display: block;
   width: 100%;
   background-color: rgb(192, 17, 34);
@@ -122,21 +126,59 @@
   color: white;
   text-decoration: none;
 }
-.hero__wrap .content__social-wrap {
+.hero__container .content__social-wrap {
   display: none;
 }
-.hero__wrap .decoration {
+.hero__container .decoration {
   width: 100%;
   position: relative;
   order: 2;
   margin-left: auto;
   margin-right: auto;
 }
-.hero__wrap .decoration .man {
+.hero__container .decoration .man {
   width: 100%;
   position: absolute;
   top: 10px;
   left: -30px;
+}
+
+/* upcoming events */
+.upcoming-events {
+  width: 100%;
+  height: 100vh;
+  background-color: pink;
+}
+.upcoming-events__container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.upcoming-events__container .title {
+  text-align: center;
+  padding: 20px;
+  color: rgb(5, 0, 1);
+}
+
+/* about us */
+.about-us {
+  width: 100%;
+  height: 100vh;
+  background-color: aquamarine;
+}
+.about-us__container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-us__container .title {
+  text-align: center;
+  padding: 20px;
+  color: rgb(5, 0, 1);
+}
+.about-us__container .text {
+  color: rgb(5, 0, 1);
+  text-align: justify;
 }
 
 @media screen and (min-width: 375px) {

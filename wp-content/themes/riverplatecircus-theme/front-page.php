@@ -18,7 +18,7 @@ get_header();
 
 	<main id="primary" class="site-main">
 		<section class="hero">
-			<div class="hero__wrap">
+			<div class="hero__container">
 				<h1 class="title">River Plate Circus</h1>
 				<div class="content">
 					<h1 class="content__title">River Plate Circus</h1>
@@ -34,6 +34,28 @@ get_header();
 					<img class="blob" src="<?php echo get_template_directory_uri() ?>/img/svg/blobanimation.svg" alt="">
 					<img class="man" src="<?php echo get_template_directory_uri() ?>/img/png/colgado-1.png" alt="">
 				</div>
+			</div>
+		</section>
+
+		<section class="upcoming-events">
+			<div class="upcoming-events__container">
+				<h2 class="title">Próximos eventos</h2>
+				<!-- add content with events plugin -->
+			</div>
+		</section>
+
+		<section class="about-us">
+			<div class="about-us__container">
+				<h2 class="title">Sobre nosotros</h2>
+				<p class="text"> 
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+					Repellat nobis, cumque molestias sunt in culpa, doloribus beatae perferendis,
+					rem porro minus quod tempora explicabo distinctio quaerat ajenos!
+				</p>
+			</div>
+
+			<div class="img-container">
+				<img src="<?php echo get_template_directory_uri() ?>/img/png/monociclo.png" alt="">
 			</div>
 		</section>
 
