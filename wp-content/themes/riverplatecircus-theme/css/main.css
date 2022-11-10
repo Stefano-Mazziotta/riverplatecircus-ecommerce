@@ -84,7 +84,7 @@ html {
   background-image: url("../img/svg/patternpad.svg");
 }
 .hero__container {
-  width: 90%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 5px;
@@ -110,7 +110,7 @@ html {
   display: none;
 }
 .hero__container .content__subtitle {
-  width: 60%;
+  width: 70%;
   font-size: 18px;
   font-weight: 400;
   color: rgb(5, 0, 1);
@@ -151,7 +151,7 @@ html {
   background-color: pink;
 }
 .upcoming-events__container {
-  width: 90%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -180,6 +180,31 @@ html {
 .about-us__container .text {
   color: rgb(5, 0, 1);
   text-align: justify;
+}
+
+/********* FOOTER *********/
+.site-footer {
+  width: 100%;
+  height: 50vh;
+  background-color: rgb(169, 15, 30);
+}
+.site-footer .footer-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.site-footer .footer-container .social-media-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.site-footer .footer-container .social-media-wrap a {
+  text-decoration: none;
+  color: white;
+}
+.site-footer .footer-container .faq-wrap {
+  color: white;
 }
 
 @media screen and (min-width: 375px) {
