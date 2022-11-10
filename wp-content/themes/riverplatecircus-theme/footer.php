@@ -11,21 +11,22 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'riverplatecircus-theme' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'riverplatecircus-theme' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'riverplatecircus-theme' ), 'riverplatecircus-theme', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+	<footer class="site-footer">
+		<div class="footer-container">
+			<div class="social-media-wrap">
+				<a href="">a</a>
+				<a href="">b</a>
+				<a href="">c</a>
+			</div>
+			<div class="faq-wrap">
+				<div class="expand-wrap">
+					<h3>Pregunta</h3>
+					<p>respuesta!!!</p>
+				</div>
+			</div>
+			
+		</div>
+	</footer>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
