@@ -11,6 +11,8 @@
     box-shadow: rgb(0 0 0 / 5%) 0px 6px 24px 0px, rgb(0 0 0 / 8%) 0px 0px 0px 1px;
     z-index: 9;
 
+    background-color: $principal-monochromatic-1;
+
     .header-wrap{
         width: 90%;
         margin-left: auto;
@@ -22,12 +24,13 @@
         align-items: center;
         
         .header__logo{
+            fill: white;
             width: 125px;
         }
 
         .fa-bars{
             font-size: 28px;
-            color: $principal;
+            color: $white;
         }
 
         .header__desktop-nav{
@@ -48,7 +51,7 @@
     
         margin-top: -100%;
     
-        background-color: $principal;
+        background-color: $principal-monochromatic-1;
         
         transition: 1s ease;
         
@@ -60,8 +63,7 @@
             width: 100%;
             padding: 5px;
     
-            border-bottom: 2px solid $principal-monochromatic-2;
-            border-top: 2px solid $principal-monochromatic-2;
+            border-top: 3px solid $principal-monochromatic-2;
     
             color: $white;
             font-size: 18px;
@@ -192,7 +194,7 @@
 .about-us{
     width: 100%;
     height: 100vh;
-    background-color: aquamarine;
+    background-color: $principal-monochromatic-7;
 
     &__container{
         width: 80%;
@@ -263,6 +265,8 @@
 @media screen and (min-width: 1024px)  {
     /********* HEADER *********/
     .site-header{
+        position: sticky;
+        top: 0;
         .header-wrap{
             width: 80%;
             .fa-bars{
@@ -272,20 +276,17 @@
                 display: block;
 
                 a{
-                    color: $principal;
+                    color: $white;
                     font-size: 18px;
                     text-decoration: none;
-    
-                    &:hover{
-                        color: $principal-monochromatic-1;
-                    }
     
                     &.nav__item, &.cart-customlocation{
                         margin-right: 25px;
                         padding-bottom: 5px;
                         font-weight: 600;
+
                         &:hover{
-                            border-bottom: 2px solid $principal-monochromatic-1;
+                            text-decoration: underline;
                         }
     
                         .fa-cart-shopping{
@@ -305,7 +306,7 @@
     .hero{
         height: 80vh; 
     
-        &__wrap{
+        &__container{
             width: 80%;
             height: 100%;
             flex-direction: row;
@@ -336,6 +337,7 @@
 
                 &__subtitle{
                     padding-bottom: 5px;
+                    width: 100%;
                 }
                 &__btn{
                     width: 50%;
@@ -388,7 +390,7 @@
 
     .hero{
         height: 70vh;
-        &__wrap{
+        &__container{
             width: 70%;
 
             .content{
