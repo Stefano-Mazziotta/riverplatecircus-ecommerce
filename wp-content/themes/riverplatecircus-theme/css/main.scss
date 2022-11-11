@@ -13,6 +13,9 @@
 
     background-color: $principal-monochromatic-1;
 
+    position: sticky;
+    top: 0;
+
     .header-wrap{
         width: 90%;
         margin-left: auto;
@@ -41,6 +44,9 @@
 
 .mobile-nav-wrap{
     overflow: hidden;
+    position: sticky;
+    top: 0 + 60px;
+    z-index: 9;
     .mobile-nav{
         width: 100%;
     
@@ -53,7 +59,7 @@
     
         background-color: $principal-monochromatic-1;
         
-        transition: 1s ease;
+        transition: all .8s ease;
         
         &.collapse{
             margin-top: 0;
