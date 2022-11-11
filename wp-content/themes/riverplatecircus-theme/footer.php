@@ -13,16 +13,11 @@
 
 	<footer class="site-footer">
 		<div class="footer-container">
-			<div class="social-media-wrap">
-				<a href="">a</a>
-				<a href="">b</a>
-				<a href="">c</a>
-			</div>
-			<div class="faq-wrap">
-				<div class="expand-wrap">
-					<h3>Pregunta</h3>
-					<p>respuesta!!!</p>
-				</div>
+
+			<div class="social-wrap">
+				<a target="_blank" class="social-item" href="https://wa.me/+34662539740"><i class="fa-brands fa-whatsapp"></i></a>
+				<a target="_blank" class="social-item" href="https://www.instagram.com/circotumundodefantasia/"><i class="fa-brands fa-instagram"></i></a>
+				<a target="_blank" class="social-item" href="https://www.facebook.com/Circo-Festini%C3%B1o-107151255431629"><i class="fa-brands fa-facebook-f"></i></a>
 			</div>
 			
 		</div>
