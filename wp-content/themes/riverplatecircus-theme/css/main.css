@@ -200,13 +200,10 @@ html {
   background-color: rgb(169, 15, 30);
   margin-bottom: 10px;
 }
-.about-us__container .content-wrap {
-  display: flex;
-  flex-direction: column;
-}
-.about-us__container .content-wrap .text {
+.about-us__container .text {
   color: rgb(255, 255, 255);
   font-size: 18px;
+  font-weight: 100;
 }
 
 /********* FOOTER *********/

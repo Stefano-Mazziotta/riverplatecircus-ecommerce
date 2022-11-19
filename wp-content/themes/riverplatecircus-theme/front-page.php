@@ -49,11 +49,9 @@ get_header();
 				<h2 class="title">SOBRE <br> NOSOTROS</h2>
 				<div class="separator-line"></div>
 
-				<div class="content-wrap">
-					<p class="text"> 
-						Somos un circo mágico lleno de arte, alegría y emoción que hace felices a todas las familias! 
-					</p>
-				</div>
+				<p class="text"> 
+					Somos un circo mágico lleno de arte, alegría y emoción que hace felices a todas las familias! 
+				</p>				
 				
 			</div>
 

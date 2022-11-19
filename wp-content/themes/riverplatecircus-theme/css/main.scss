@@ -233,16 +233,13 @@
             margin-bottom: 10px;
         }
         
-        .content-wrap{
 
-            display: flex;
-            flex-direction: column;
-
-            .text{
-                color: $white;
-                font-size: 18px;
-            }
+        .text{
+            color: $white;
+            font-size: 18px;
+            font-weight: 100;
         }
+        
     }
 }
 
