@@ -96,7 +96,7 @@
     background-image: url('../img/svg/patternpad.svg');
 
     &__container{
-        width: 80%;
+        width: 90%;
 
         margin-left: auto;
         margin-right: auto;
@@ -114,6 +114,7 @@
 
             color: $black;
             text-align: center;
+            text-shadow: $text-shadow-title;
 
             margin-bottom: 5px;
         }
@@ -199,23 +200,48 @@
 /* about us */
 .about-us{
     width: 100%;
-    height: 100vh;
-    background-color: $principal-monochromatic-7;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: $black;
 
     &__container{
-        width: 80%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
-
+        text-align: left;
+        
         .title{
-            text-align: center;
-            padding: 20px;
-            color: $black;
+            padding-top: 20px;
+            margin-bottom: 5px;
+
+            font-size: 48px;
+
+            text-shadow: none;
+            -moz-text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;
+            -moz-text-stroke-color: $principal;
+            -webkit-text-stroke-color: $principal;
+            -moz-text-stroke-width: .040em;
+            -webkit-text-stroke-width: .040em;
+            line-height: 50px;
         }
 
-        .text{
-            color: $black;
-            text-align: justify;
+        .separator-line{
+            width: 10%;
+            height: 5px;
+            background-color: $principal-monochromatic-1;
+            margin-bottom: 10px;
+        }
+        
+        .content-wrap{
+
+            display: flex;
+            flex-direction: column;
+
+            .text{
+                color: $white;
+                font-size: 18px;
+            }
         }
     }
 }
@@ -255,7 +281,7 @@
 
 @media screen and (min-width: 375px) {
     .hero{
-        &__wrap{
+        &__container{
             .content{
                 &__subtitle{
                     width: 100%;
@@ -270,7 +296,7 @@
 
 @media screen and (min-width: 425px) {
     .hero{
-        &__wrap{
+        &__container{
             width: 80%;
             
             .decoration{
@@ -282,7 +308,7 @@
 
 @media screen and (min-width: 768px) {
     .hero{
-        &__wrap{
+        &__container{
             width: 80%;
 
             .content{
@@ -417,26 +443,40 @@
         }
     }
 
+    /* about us */
+    .about-us{
+        &__container{
+            width: 80%;
+        }
+    }
+
 }
 
 @media screen and (min-width: 1440px) {
     .site-header{
         .header-wrap{
-            width: 70%;
+            width: 60%;
         }
     }
 
     .hero{
         height: 70vh;
         &__container{
-            width: 70%;
+            width: 60%;
 
             .content{
-                width: 40%;
+                width: 50%;
             }
             .decoration{
-                width: 25%;
+                width: 30%;
             }
+        }
+    }
+
+    /* about us */
+    .about-us{
+        &__container{
+            width: 60%;
         }
     }
     
