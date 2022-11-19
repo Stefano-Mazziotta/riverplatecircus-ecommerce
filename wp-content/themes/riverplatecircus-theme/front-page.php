@@ -44,19 +44,19 @@ get_header();
 			</div>
 		</section>
 
-		<section class="about-us">
+		<section class="about-us" id="Nosotros">
 			<div class="about-us__container">
-				<h2 class="title">Sobre nosotros</h2>
-				<p class="text"> 
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Repellat nobis, cumque molestias sunt in culpa, doloribus beatae perferendis,
-					rem porro minus quod tempora explicabo distinctio quaerat ajenos!
-				</p>
+				<h2 class="title">SOBRE <br> NOSOTROS</h2>
+				<div class="separator-line"></div>
+
+				<div class="content-wrap">
+					<p class="text"> 
+						Somos un circo mágico lleno de arte, alegría y emoción que hace felices a todas las familias! 
+					</p>
+				</div>
+				
 			</div>
 
-			<div class="img-container">
-				<img src="<?php echo get_template_directory_uri() ?>/img/png/monociclo.png" alt="">
-			</div>
 		</section>
 
 	</main>
