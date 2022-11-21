@@ -13,6 +13,7 @@
 	$urlEvents = $urlHome . "/eventos";
 	$urlNosotros = $urlHome . "/#Nosotros";
 	$urlCart =  $urlHome . "/carrito";
+	$urlFaq =  $urlHome . "/faq";
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -42,6 +43,7 @@
 				<a class="nav__item" href="<?php echo $urlHome ?>">Inicio</a>
 				<a class="nav__item" href="<?php echo $urlEvents ?>">Eventos</a>
 				<a class="nav__item" href="<?php echo $urlNosotros ?>">Nosotros</a>
+				<a class="nav__item" href="<?php echo $urlFaq ?>">Preguntas frecuentes</a>
 				<a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" 
 				title="<?php _e( 'View your shopping cart' ); ?>">
 				<i class="fa-solid fa-cart-shopping"></i>
@@ -58,6 +60,7 @@
 			<a class="nav__item" href="<?php echo $urlHome ?>">Inicio</a>
 			<a class="nav__item" href="<?php echo $urlEvents ?>">Eventos</a>
 			<a class="nav__item" href="<?php echo $urlNosotros ?>">Nosotros</a>
+			<a class="nav__item" href="<?php echo $urlFaq ?>">Preguntas frecuentes</a>
 			<a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" 
 			title="<?php _e( 'View your shopping cart' ); ?>">
 			<i class="fa-solid fa-cart-shopping"></i>
