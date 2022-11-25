@@ -1,0 +1,18 @@
+@keyframes swipeRight{
+    from {
+        transform: translateX(-50px);
+    }
+    to{
+
+        transform: translateX(0px);
+    }
+}
+@keyframes swipeLeftOut{
+    from {
+        transform: translateX(0px);
+    }
+    to{
+
+        transform: translateX(-50px);
+    }
+}

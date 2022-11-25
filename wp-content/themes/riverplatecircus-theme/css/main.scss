@@ -1,5 +1,6 @@
 @import './imports/variables.scss';
 @import './imports/globals.scss';
+@import './imports/animations.scss';
 
 /********* HEADER *********/
 .site-header{
@@ -88,13 +89,13 @@
     }
 }
 
-/********* BODY *********/
+/********* BODY - HOME *********/
 /* hero */
 .hero{
     width: 100%;
     height: 90vh;
     background-image: url('../img/svg/patternpad.svg');
-
+    background-attachment: fixed;
     &__container{
         width: 90%;
 
@@ -276,6 +277,93 @@
     }
 }
 
+/********* FAQ PAGE *********/
+.faq-hero{
+    width: 100%;
+    background-image: url('../img/svg/patternpad.svg');
+    background-attachment: fixed;
+
+    margin-bottom: 25px;
+
+    .container{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 20px;
+        
+        h1{
+            font-size: 24px;
+            color: $black;
+            text-shadow: $text-shadow-title;
+            padding-top: 10px;
+            line-height: 50px;
+        }
+        .line{
+            width: 10%;
+            height: 5px;
+            background-color: $principal-monochromatic-1;
+        }
+    }
+}
+.faq-section{
+    width: 100%;
+    height: 71vh;
+    background-color:$white;
+    
+    .section__container{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+        .expand-wrap{
+            width: 100%;
+            height: 100%;
+            margin-bottom: 25px;
+            
+            .question-wrap{
+                display: flex;
+                gap: 15px;
+                align-items: center;
+
+                padding: 5px 10px;
+                color: $white;
+                background-color: $principal-monochromatic-5;
+                box-shadow: $box-shadow-btn;
+                border-radius: 3px 3px 0px 0px;
+                &.collapse{
+                    background-color: $principal-monochromatic-1;
+                }
+                .status-expand{
+                    width: 10px;
+                }
+            }
+
+            .expand__answer{
+                display: none;
+
+                &.collapse{
+                    display: block;
+                    padding: 5px 10px;
+                    color: $black;
+
+                    border-left: 1px solid $light-color-5;
+                    border-bottom: 1px solid $light-color-5;
+                    border-right: 1px solid $light-color-5;
+
+                    animation: swipeRight .5s ease forwards;
+                }
+                &.remove{
+                    overflow: hidden;
+                    position: absolute;
+                    animation: swipeLeftOut .3s ease forwards;
+                }
+                
+            }
+        }
+    }
+}
+
+
 @media screen and (min-width: 375px) {
     .hero{
         &__container{
@@ -447,19 +535,46 @@
         }
     }
 
+    /********* FAQ PAGE *********/
+    .faq-hero{
+        .container{
+            width: 80%;
+        }
+    }
+    .faq-section{
+        .section__container{
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .expand-wrap{
+                width: 45%;
+
+                .question-wrap{
+                    transition: background-color .3s ease;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: $principal-monochromatic-1;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) { 
     .site-header{
         .header-wrap{
-            width: 60%;
+            width: 70%;
         }
     }
 
     .hero{
         height: 70vh;
         &__container{
-            width: 60%;
+            width: 70%;
 
             .content{
                 width: 50%;
@@ -473,8 +588,11 @@
     /* about us */
     .about-us{
         &__container{
-            width: 60%;
+            width: 70%;
         }
     }
+
+    /********* FAQ PAGE *********/
+
     
 }

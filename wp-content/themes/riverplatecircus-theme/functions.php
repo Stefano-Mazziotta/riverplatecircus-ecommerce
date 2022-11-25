@@ -145,6 +145,13 @@ function riverplatecircus_theme_scripts() {
 
 	wp_enqueue_script( 'fontawesome-icons', 'https://kit.fontawesome.com/c3521f5bf2.js' );
 	wp_enqueue_script( 'riverplatecircus-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), false, false);
+	
+	// cargar el js solo si es seccion faq
+	// $isFaqSection = get_home_url() . "/faq" == ;  
+	$isFaqSection = true;  
+	if($isFaqSection){
+		wp_enqueue_script( 'riverplatecircus-theme-faq-expand', get_template_directory_uri() . '/js/faq-expand.js', array(), false, false);
+	}
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
