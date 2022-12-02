@@ -1,37 +1,54 @@
-window.addEventListener('load', () => {
-    const $expandsQuestionWrap = document.getElementsByClassName('question-wrap');
+import anime from '../../../../node_modules/animejs/lib/anime.es';
 
-    for (const key in $expandsQuestionWrap) {
-        if (Object.hasOwnProperty.call($expandsQuestionWrap, key)) {
-            let $element = $expandsQuestionWrap[key];
-            $element.addEventListener('click', handleClick);
-        }
-    }
-    
-})
+function getHeightAnswer($answerWrap){
+    const $answerParaph = $answerWrap.childNodes[1];
+    return $answerParaph.offsetHeight;
+}
 
 function handleClick(event){
     const $questionWrap = event.currentTarget;
-    const $answer = $questionWrap.nextElementSibling;
+    const $answerWrap = $questionWrap.nextElementSibling;
     const $statusExpand = $questionWrap.childNodes[1];
 
-    const isCollapsed = $answer.classList.contains('collapse');
+    const isCollapsed = $questionWrap.classList.contains('collapse');
     if(isCollapsed){
-        $answer.classList.remove('collapse');
         $questionWrap.classList.remove('collapse');
-        $answer.classList.add('remove');
         $statusExpand.innerHTML = '+';
+
+        anime({
+            targets: $answerWrap,
+            height: '0px',
+            duration: 300,
+            easing: 'easeInOutQuad'
+        });
+
         return;
     }
-    
-    const existRemove = $answer.classList.contains('remove');
-    if(existRemove){
-        $answer.classList.remove('remove')
-    }
-    
+
     $statusExpand.innerHTML = '-';
     $questionWrap.classList.add('collapse');
-    $answer.classList.add('collapse');
 
+    const heightAnswer = getHeightAnswer($answerWrap);
 
+    anime({
+        targets: $answerWrap,
+        height: heightAnswer + 'px',
+        duration: 300,
+        easing: 'easeInOutQuad'
+    });
 }
+
+function applyClickEventToElements($elements){
+    for (const key in $elements) {
+        if (Object.hasOwnProperty.call($elements, key)) {
+            let $element = $elements[key];
+            $element.addEventListener('click', handleClick);
+        }
+    }
+}
+
+window.addEventListener('load', () => {
+    const $expandsQuestionWrap = document.getElementsByClassName('question-wrap');
+    applyClickEventToElements($expandsQuestionWrap);    
+})
+

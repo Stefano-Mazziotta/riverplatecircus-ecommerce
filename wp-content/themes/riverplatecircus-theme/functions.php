@@ -213,3 +213,16 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 	$fragments['a.cart-customlocation'] = ob_get_clean();
 	return $fragments;
 }
+
+/**
+ * apply to script type module faq-expand.js
+ */
+add_filter("script_loader_tag", "add_module_to_my_script", 10, 3);
+function add_module_to_my_script($tag, $handle, $src)
+{
+    if ("riverplatecircus-theme-faq-expand" === $handle) {
+        $tag = '<script type="module" src="' . esc_url($src) . '"></script>';
+    }
+
+    return $tag;
+}

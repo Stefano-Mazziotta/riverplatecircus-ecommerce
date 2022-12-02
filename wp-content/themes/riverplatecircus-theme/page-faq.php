@@ -29,49 +29,61 @@ get_header();
         <div class="expand-wrap">
             <div class="question-wrap">
                 <h4 class="status-expand">+</h4>
-                <h4 class="expand__question">Esto es una pregunta?</h4>
+                <h4 class="expand__question">¿Para qué edad es la entrada infantil?</h4>
             </div>  
-            <p class="expand__answer">Esta es la respuesta de la pregunta</p>
+            <div class="expand__answer">
+                <p>La entrada infantil es de 1 a 10 años.</p>
+            </div>
         </div>
 
         <div class="expand-wrap">
             <div class="question-wrap">
                 <h4 class="status-expand">+</h4>
-                <h4 class="expand__question">Esto es una pregunta? 2</h4>
+                <h4 class="expand__question">¿Cuanto dura la función?</h4>
             </div>  
-            <p class="expand__answer">Esta es la respuesta de la pregunta 2</p>
+            <div class="expand__answer">
+                <p>La función dura aproximadamente 1 hora y 15 minutos.</p>
+            </div>
         </div>
 
         <div class="expand-wrap">
             <div class="question-wrap">
                 <h4 class="status-expand">+</h4>
-                <h4 class="expand__question">Esto es una pregunta? 2</h4>
+                <h4 class="expand__question">¿Se pueden entrar los cochecitos de bebés?</h4>
             </div>  
-            <p class="expand__answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, nisi dolorem tenetur tempore culpa dicta ipsum debitis porro ab asperiores voluptas, incidunt rerum? Aspernatur ipsa distinctio qui temporibus fugiat? Repellat?</p>
+            <div class="expand__answer">
+                <p>Los Cochecitos se deberán dejar a la entrada de la carpa donde quedarán protegidos hasta recuperarlos a la salida.</p>
+            </div>
         </div>
 
         <div class="expand-wrap">
             <div class="question-wrap">
                 <h4 class="status-expand">+</h4>
-                <h4 class="expand__question">Esto es una pregunta? 2</h4>
+                <h4 class="expand__question">¿Las entradas son enumeradas?</h4>
             </div>  
-            <p class="expand__answer">Esta es la respuesta de la pregunta 2</p>
+            <div class="expand__answer">
+                <p>Únicamente las entradas adquiridas para el palco son numeradas, por el contrario las entradas generales son por orden de llegada.</p>
+            </div>
         </div>
 
         <div class="expand-wrap">
             <div class="question-wrap">
                 <h4 class="status-expand">+</h4>
-                <h4 class="expand__question">Esto es una pregunta? 2</h4>
+                <h4 class="expand__question">¿El espectáculo se suspende por lluvia?</h4>
             </div>  
-            <p class="expand__answer">Esta es la respuesta de la pregunta 2</p>
+            <div class="expand__answer">
+                <p>Depende del nivel de gravedad de la tormenta. Generalmente la función no se suspende por lluvia.</p>
+            </div>
         </div>
         
         <div class="expand-wrap">
             <div class="question-wrap">
                 <h4 class="status-expand">+</h4>
-                <h4 class="expand__question">Esto es una pregunta? 2</h4>
+                <h4 class="expand__question">¿Hay descuento para familias numerosas?</h4>
             </div>  
-            <p class="expand__answer">Esta es la respuesta de la pregunta 2</p>
+            <div class="expand__answer">
+                <p>No, no hay descuentos para familias numerosas.</p>
+            </div>
         </div>
 
         
