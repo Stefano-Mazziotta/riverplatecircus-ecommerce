@@ -226,3 +226,12 @@ function add_module_to_my_script($tag, $handle, $src)
 
     return $tag;
 }
+
+function faq_get_items(){
+	global $wpdb;
+
+	$query = "SELECT * FROM faq_items";
+	$faqItems = $wpdb->get_results($query); 
+
+	return $faqItems;
+};
