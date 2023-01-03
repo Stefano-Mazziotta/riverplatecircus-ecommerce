@@ -44,11 +44,11 @@
 				<a class="nav__item" href="<?php echo $urlEvents ?>">Eventos</a>
 				<a class="nav__item" href="<?php echo $urlNosotros ?>">Nosotros</a>
 				<a class="nav__item" href="<?php echo $urlFaq ?>">Preguntas frecuentes</a>
-				<a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" 
-				title="<?php _e( 'View your shopping cart' ); ?>">
+				
+				
 				<i class="fa-solid fa-cart-shopping"></i>
-				<?php echo sprintf ( _n( '%d ticket', '%d tickets', WC()->cart->get_cart_contents_count() ),
-				WC()->cart->get_cart_contents_count() ); ?> - <?php echo WC()->cart->get_cart_total(); ?>
+				
+				
 				</a>
 			</nav>
 		</div>
@@ -61,11 +61,10 @@
 			<a class="nav__item" href="<?php echo $urlEvents ?>">Eventos</a>
 			<a class="nav__item" href="<?php echo $urlNosotros ?>">Nosotros</a>
 			<a class="nav__item" href="<?php echo $urlFaq ?>">Preguntas frecuentes</a>
-			<a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" 
-			title="<?php _e( 'View your shopping cart' ); ?>">
+			 
+			
 			<i class="fa-solid fa-cart-shopping"></i>
-			<?php echo sprintf ( _n( '%d ticket', '%d tickets', WC()->cart->get_cart_contents_count() ),
-			WC()->cart->get_cart_contents_count() ); ?> - <?php echo WC()->cart->get_cart_total(); ?>
+			
 			</a>
 		</nav>
 	</div>
